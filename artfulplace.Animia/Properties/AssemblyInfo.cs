@@ -7,11 +7,11 @@ using System.Security;
 // 制御されます。アセンブリに関連付けられている情報を変更するには、
 // これらの属性値を変更します。
 [assembly: AssemblyTitle("artfulplace.Animia")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("PowerPoint Storyboarding")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("artfulplace.net")]
 [assembly: AssemblyProduct("artfulplace.Animia")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCopyright("Copyright © azusa minamori 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -22,4 +22,12 @@ namespace artfulplace.Animia.Animations.Behaviors
 			sh.IncrementTop((float)convertToRate(time));
 		}
 	}
+
+	public class IncrementRotationBehavior : ArithmeticBase
+	{
+		public override void SetShapeValue(double time, Shape sh)
+		{
+			sh.IncrementRotation((float)convertToRate(time));
+		}
+	}
 }
