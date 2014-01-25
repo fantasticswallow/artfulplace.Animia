@@ -163,6 +163,7 @@
     <Compile Include="Animations\Behaviors\FlipBehavior.cs" />
     <Compile Include="Animations\Behaviors\IncrementBehavior.cs" />
     <Compile Include="Animations\Behaviors\ShapeBehaviorBase.cs" />
+    <Compile Include="Animations\Behaviors\ShapeCycleBehavior.cs" />
     <Compile Include="Animations\BehaviorTimeline.cs" />
     <Compile Include="Animations\DoubleAnimation.cs" />
     <Compile Include="Animations\FloatAnimation.cs" />

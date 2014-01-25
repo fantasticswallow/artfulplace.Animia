@@ -8,7 +8,7 @@ namespace artfulplace.Animia.Animations
 	/// </summary>
 	public abstract class ArithmeticAnimation : IAnimation		
 	{
-		public object CurrentValue(double elapsedTime)
+		public virtual object CurrentValue(double elapsedTime)
 		{
 			var rate = convertToRate(elapsedTime);
 			var res = this.Expression(rate);
