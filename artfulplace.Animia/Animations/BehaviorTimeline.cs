@@ -16,10 +16,14 @@ namespace artfulplace.Animia.Animations
 		
 		public void timerUpdate(double elapsedSeconds)
 		{
-			var target = Behavior.Where(x => x.StartTime >= elapsedSeconds).Where(x => !x.IsCompleted);
+			var target = Behavior.Where(x => x.StartTime <= elapsedSeconds).Where(x => !x.IsCompleted);
 			foreach (var b in target)
 			{
 				b.SetValue(elapsedSeconds, TargetObject);
+			}
+			if (Behavior.All(_ => _.IsCompleted))
+			{
+				IsFinished = true;
 			}
 		}
 
@@ -30,6 +34,7 @@ namespace artfulplace.Animia.Animations
 			{
 				b.SetValue(-1.0, TargetObject);
 			}
+			IsFinished = false;
 		}
 	}
 }

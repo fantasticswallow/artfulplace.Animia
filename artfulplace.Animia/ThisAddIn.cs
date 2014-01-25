@@ -15,16 +15,16 @@ namespace artfulplace.Animia
 		{
 			Application.AfterPresentationOpen += Application_AfterPresentationOpen;
 			Application.SlideShowNextClick += Events.SlideMoveManager.Application_SlideNextClick;
-			//Application.SlideShowEnd += Application_SlideShowEnd;
-			Application.PresentationSave += Application_PresentationSave;
+			Application.SlideShowEnd += Application_SlideShowEnd;
+			// Application.PresentationSave += Application_PresentationSave;
 			Events.SlideMoveManager.TriggerCollection = new List<SlideMoveEventTrigger>();
 		}
 
-		void Application_PresentationSave(PowerPoint.Presentation Pres)
-		{
-			var sh = ShapeObjectResolver.Resolve(3, 2) as PowerPoint.Shape;
-			sh.Flip(Office.MsoFlipCmd.msoFlipHorizontal);
-		}
+		//void Application_PresentationSave(PowerPoint.Presentation Pres)
+		//{
+		//	var sh = ShapeObjectResolver.Resolve(3, 2) as PowerPoint.Shape;
+		//	sh.Flip(Office.MsoFlipCmd.msoFlipHorizontal);
+		//}
 
 		void Application_SlideShowEnd(PowerPoint.Presentation Pres)
 		{
@@ -34,10 +34,7 @@ namespace artfulplace.Animia
 
 		void Application_AfterPresentationOpen(PowerPoint.Presentation Pres)
 		{	
-			//Sample.TestCodeInvoker.ReadyAnimation();
-			//var sh = ShapeObjectResolver.Resolve(3,2) as PowerPoint.Shape;
-			// sh.IncrementLeft(300.0f);
-			// sh.Flip(Office.MsoFlipCmd.msoFlipHorizontal);
+			Sample.TestCodeInvoker.ReadyAnimation2();
 		}
 
 		private void ThisAddIn_Shutdown(object sender, System.EventArgs e)

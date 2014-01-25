@@ -50,6 +50,6 @@ namespace artfulplace.Animia.Animations
 		private DispatcherTimer timer = new DispatcherTimer();
 		private Stopwatch sw = new Stopwatch();
 
-		public IEnumerable<Timeline> Timelines { get; set;}
+		public IEnumerable<ITimeline> Timelines { get; set;}
 	}
 }

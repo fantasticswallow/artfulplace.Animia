@@ -63,6 +63,7 @@ namespace artfulplace.Animia.Animations
 										CSharpArgumentInfo.Create(
 										CSharpArgumentInfoFlags.None, null)}));
 			csite.Target.Invoke(csite, TargetObject, Animation.CurrentValue(0.0));
+			IsFinished = false;
 		}
 	}
 }

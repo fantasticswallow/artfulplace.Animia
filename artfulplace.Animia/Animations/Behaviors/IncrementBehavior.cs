@@ -11,7 +11,7 @@ namespace artfulplace.Animia.Animations.Behaviors
 	{
 		public override void SetShapeValue(double time, Shape sh)
 		{
-			sh.IncrementLeft((float)convertToRate(time));
+			sh.IncrementLeft((float)Expression(convertToRate(time)));
 		}
 	}
 
@@ -19,7 +19,7 @@ namespace artfulplace.Animia.Animations.Behaviors
 	{
 		public override void SetShapeValue(double time, Shape sh)
 		{
-			sh.IncrementTop((float)convertToRate(time));
+			sh.IncrementTop((float)Expression(convertToRate(time)));
 		}
 	}
 
@@ -27,7 +27,7 @@ namespace artfulplace.Animia.Animations.Behaviors
 	{
 		public override void SetShapeValue(double time, Shape sh)
 		{
-			sh.IncrementRotation((float)convertToRate(time));
+			sh.IncrementRotation((float)Expression(convertToRate(time)));
 		}
 	}
 }
